@@ -1,16 +1,8 @@
- {
-     "presets": [
-         ["env",{ "modules": false }],"react","stage-1"
-     ],
-     "plugins": [
-        ["transform-runtime", {
-            "helpers": false,
-            "polyfill": false,
-            "regenerator": true,
-            "moduleName": "babel-runtime"
-        }]
-      ]
- }
+{
+    "presets": [
+        "@babel/preset-env",
+    ],
+}
      //  "plugins": [,"stage-0","stage-3"
     //      [  "transform-class-properties",
     //          "transform-es2015-classes", {

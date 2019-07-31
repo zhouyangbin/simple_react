@@ -5,23 +5,24 @@
   "main": "may.js",
   "scripts": {
     "test": "karma start",
-    "build": "rollup -c scripts/rollup.js"
+    "build": "rollup -c scripts/rollup.js",
+    "webpack": "webpack --config webpack.config.js"
   },
   "author": "c",
   "license": "MIT",
   "tips": "babel-preset-env是来替代 babel-preset(latest,es2015~)等插件包的 stage-1是箭头函数等编译 stage-3是async等编译",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-classes": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
     "jasmine-core": "^2.8.0",
+    "jsx-loader": "^0.13.2",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-event-driver-ext": "^0.0.13",
@@ -34,10 +35,12 @@
     "redux": "^3.7.2",
     "rollup": "^0.50.1",
     "rollup-plugin-babel": "^3.0.2",
-    "webpack": "^3.8.1"
+    "webpack": "^3.12.0"
   },
   "dependencies": {
+    "babel-plugin-import": "^1.12.0",
     "babel-runtime": "^6.26.0",
-    "preact-compat": "^3.17.0"
+    "preact-compat": "^3.17.0",
+    "regenerator-runtime": "^0.13.3"
   }
 }

@@ -1,41 +1,13 @@
-import {
-	mergeState
-} from '../util';
-import {
-	mayQueue,
-	lifeCycleQueue
-} from './scheduler';
-import {
-	mountStrategy
-} from './mountStrategy'
-import {
-	updateStrategy,
-	isSameType
-} from './diffStrategy'
-import {
-	diffProps,
-	FormElement,
-	getIsControlled
-} from '../diffProps'
-import {
-	Refs
-} from '../Refs';
-import {
-	NAMESPACE
-} from './DOMNamespaces';
-import {
-	getChildContext,
-	getContextByTypes
-} from './context';
-import {
-	transformChildren,
-	genKey
-} from './transformChildren';
-import {
-	disposeVnode,
-	disposeDom,
-	emptyElement
-} from './dispose';
+import { mergeState } from '../util';
+import { mayQueue, lifeCycleQueue } from './scheduler';
+import { mountStrategy } from './mountStrategy'
+import { updateStrategy,isSameType } from './diffStrategy'
+import {diffProps,FormElement,getIsControlled} from '../diffProps'
+import {Refs} from '../Refs';
+import {NAMESPACE} from './DOMNamespaces';
+import {getChildContext,getContextByTypes} from './context';
+import {transformChildren,genKey} from './transformChildren';
+import {disposeVnode,disposeDom,emptyElement} from './dispose';
 
 export function render(vnode, container, callback) {
 	return renderByMay(vnode, container, callback);

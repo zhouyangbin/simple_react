@@ -1,9 +1,5 @@
-import {
-    reRender
-} from './MayDom'
-import {
-    Refs
-} from '../Refs';
+import { reRender } from './MayDom'
+import { Refs } from '../Refs';
 
 //mayQueue 保存render过程中的各种事件队列 
 export var mayQueue = {

@@ -1,12 +1,6 @@
-import {
-    reRender
-} from './may-dom/MayDom';
-import {
-    mergeState
-} from './util';
-import {
-    mayQueue
-} from './may-dom/scheduler';
+import {reRender} from './may-dom/MayDom';
+import {mergeState} from './util';
+import {mayQueue} from './may-dom/scheduler';
 
 export function Component(props, context, key, ref) {
     this.props = props;
