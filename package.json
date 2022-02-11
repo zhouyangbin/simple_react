@@ -23,7 +23,7 @@
     "babel-register": "^6.26.0",
     "jasmine-core": "^2.8.0",
     "jsx-loader": "^0.13.2",
-    "karma": "^1.7.1",
+    "karma": "^6.3.14",
     "karma-chrome-launcher": "^2.2.0",
     "karma-event-driver-ext": "^0.0.13",
     "karma-firefox-launcher": "^1.0.1",
